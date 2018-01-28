@@ -1,4 +1,4 @@
 Documentation
 =============
 
-Put a brief description of 'Countries API '.
+A simple Pyramid-Cornice API example with Celery integration
