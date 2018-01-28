@@ -1,4 +1,13 @@
-Documentation
-=============
+Pyramid-Cornice API
+===================
 
-A simple Pyramid-Cornice API example with Celery integration
+
+Simple Pyramid-Cornice API example with Celery integration.
+
+Setup
+=====
+.. code-block:: shell
+
+    pip install -r requirements.txt
+    pserve countriesapi.ini
+    celery worker -A pyramid_celery --ini countriesapi.ini
