@@ -2,6 +2,8 @@
 """
 from cornice import Service
 
+from .tasks import print_to_stdout
+
 COUNTRIES = {
     'br': 'Brazil',
     'ca': 'Canada',
@@ -19,4 +21,5 @@ countries = Service(
 def get_info(request):
     """Returns all countries and their 2 letter code"""
     country_code = request.matchdict['code']
+    print_to_stdout.delay()
     return COUNTRIES.get(country_code, 0) or COUNTRIES
