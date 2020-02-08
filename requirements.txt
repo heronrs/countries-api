@@ -36,7 +36,7 @@ python-dateutil==2.6.1
 pytz==2017.3
 redis==2.10.6
 repoze.lru==0.7
-requests==2.18.4
+requests==2.20.0
 simplejson==3.13.2
 six==1.11.0
 translationstring==1.3
